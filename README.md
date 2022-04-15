@@ -71,3 +71,5 @@ const MyComponent = () => {
   );
 };
 ```
+
+[Edit in CodeSandbox](https://codesandbox.io/s/react-reactive-nav-demo-z74jef?file=%2Fsrc%2FApp.tsx)
