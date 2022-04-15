@@ -6,13 +6,11 @@ React navbar component that mimics Android-like toolbar scrolling behavior.
 
 ## Installation
 
-### yarn
-
 ```bash
 yarn add react-reactive-nav
 ```
 
-### npm
+or
 
 ```bash
 npm i react-reactive-nav
@@ -30,7 +28,18 @@ const MyComponent = () => (
 );
 ```
 
-Note that `height` must be supplied to the component's props.
+## Props
+
+| Name                  | Type                             | Default | Description                                                                                      |
+| --------------------- | -------------------------------- | ------- | ------------------------------------------------------------------------------------------------ |
+| `children`            | `ReactNode`                      |         | The content of the navbar.                                                                       |
+| `height`\*            | `number`                         |         | Height of the navbar.                                                                            |
+| `snap`                | `boolean`                        | `false` | Snap to the closest state of the navbar based on the scroll amount.                              |
+| `snapDelay`           | `number`                         | `200`   | Set the delay of snap checking after scrolling (in ms). Only applies if `snap` is set to `true`. |
+| `snapDuration`        | `number`                         | `200`   | Specify how long the snap animation should run (in ms). Only applies if `snap` is set to `true`. |
+| `paddingElementProps` | `HTMLAttributes<HTMLDivElement>` |         | Props passed to the padding element (blank div with a set height).                               |
+
+\* Required
 
 ## Examples
 
