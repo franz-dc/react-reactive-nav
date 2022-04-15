@@ -2,6 +2,20 @@
 
 React navbar component that mimics Android-like toolbar scrolling behavior.
 
+## Installation
+
+### yarn
+
+```bash
+yarn add react-reactive-nav
+```
+
+### npm
+
+```bash
+npm i react-reactive-nav
+```
+
 ## Usage
 
 ```jsx
@@ -33,7 +47,7 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import { ReactiveNav } from 'react-reactive-nav';
 
 const MyComponent = () => {
-  const theme = createTheme();
+  const theme = useTheme();
   const smUp = useMediaQuery(theme.breakpoints.up('sm'));
 
   return (
