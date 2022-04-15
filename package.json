@@ -2,8 +2,12 @@
   "name": "react-reactive-nav",
   "version": "1.0.0",
   "description": "React navbar component that mimics Android-like toolbar scrolling behavior.",
-  "author": "Franz DC <franzdc.21@gmail.com>",
+  "author": "Franz Joshua Dela Cruz <franzdc.21@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franz-dc/react-reactive-nav.git"
+  },
   "keywords": [
     "react",
     "navbar",
