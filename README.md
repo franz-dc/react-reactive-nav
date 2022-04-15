@@ -24,7 +24,9 @@ npm i react-reactive-nav
 import { ReactiveNav } from 'react-reactive-nav';
 
 const MyComponent = () => (
-  <ReactiveNav height={64}>{/* navbar content goes here */}</ReactiveNav>
+  <ReactiveNav height={64}>
+    {/* navbar / appbar content goes here */}
+  </ReactiveNav>
 );
 ```
 
