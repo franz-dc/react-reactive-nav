@@ -2,6 +2,8 @@
 
 React navbar component that mimics Android-like toolbar scrolling behavior.
 
+![preview](https://github.com/franz-dc/react-reactive-nav/blob/main/preview.gif?raw=true)
+
 ## Installation
 
 ### yarn
@@ -22,9 +24,7 @@ npm i react-reactive-nav
 import { ReactiveNav } from 'react-reactive-nav';
 
 const MyComponent = () => (
-  <ReactiveNav height={64}>
-    {/* navbar content goes here */}
-  </ReactiveNav>
+  <ReactiveNav height={64}>{/* navbar content goes here */}</ReactiveNav>
 );
 ```
 
@@ -72,4 +72,4 @@ const MyComponent = () => {
 };
 ```
 
-[Edit in CodeSandbox](https://codesandbox.io/s/react-reactive-nav-demo-z74jef?file=%2Fsrc%2FApp.tsx)
+[![Edit react-reactive-nav demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-reactive-nav-demo-z74jef?fontsize=14&hidenavigation=1&theme=dark)
