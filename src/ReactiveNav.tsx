@@ -53,13 +53,14 @@ export const ReactiveNav: FC<ReactiveNavProps> = ({
   const [isTouching, setIsTouching] = useState(false);
 
   useEffect(() => {
-    // check touch state to prevent snap when scrolling on touch devices
-    // TODO: do the same for mouse devices
+    // check touch state to prevent snap when scrolling
     const handleTouchStart = () => setIsTouching(true);
     const handleTouchEnd = () => setIsTouching(false);
 
     window.addEventListener('touchstart', handleTouchStart);
     window.addEventListener('touchend', handleTouchEnd);
+    window.addEventListener('mousedown', handleTouchStart);
+    window.addEventListener('mouseup', handleTouchEnd);
 
     // change navbar position based on scroll amount
     const updateScrollPos = () => {
@@ -91,6 +92,8 @@ export const ReactiveNav: FC<ReactiveNavProps> = ({
       window.removeEventListener('scroll', updateScrollPos);
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchend', handleTouchEnd);
+      window.removeEventListener('mousedown', handleTouchStart);
+      window.removeEventListener('mouseup', handleTouchEnd);
     };
   }, [
     // states

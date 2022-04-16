@@ -16,7 +16,7 @@ or
 npm i react-reactive-nav
 ```
 
-## Usage
+## Basic Usage
 
 ```jsx
 import { ReactiveNav } from 'react-reactive-nav';
